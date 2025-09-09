@@ -1,0 +1,15 @@
+[project]
+name = "codex-gitlab-mcp-server"
+version = "0.1.0"
+description = "Codex MCP сервер для GitLab"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "python-gitlab",
+    "fastapi",
+    "uvicorn[standard]",
+    "click",
+]
+
+[project.scripts]
+codex-gitlab-server = "codex_gitlab_mcp.cli:main"
